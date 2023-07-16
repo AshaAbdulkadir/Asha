@@ -125,7 +125,7 @@
         }
 
         #projects h2 {
-            color: whitesmoke;
+            color: black;
         }
 
         .earth-project {
@@ -243,6 +243,72 @@
             margin-left: 10px;
         }
 
+        .contact {
+            width: 100%;
+            height: auto;
+            padding: 75px 0 50px 0;
+            text-align: center;
+            color: black;
+            background-color: rgba(244, 173, 173, 0.916);
+        }
+        .contact p {
+            margin-bottom: 50px;
+        }
+        .contact h2, .contact p {
+            color: black;
+        }
+        .contact-form {
+            max-width: 800px;
+            display: flex;
+            text-align: left;
+            max-width: 1100px;
+            margin: 0 auto;
+            color: white;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 9px;
+        }
+        .message {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .message  textarea {
+            border-radius: 5px;
+            border: 0px;
+        }
+        .contact-details {
+            flex: 1;
+            margin-right: 50px;
+        }
+        .contact-details input {
+            width: 100%;
+            border-radius: 5px;
+            border: 0px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+        }
+        .message button {
+            color: rgba(244, 173, 173, 0.916);
+            border: 0;
+            border-radius: 5px;
+            background: white;
+            width: 140px;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .message button:hover {
+            background: black;
+            color: white;
+            transition: 0.2s;
+        }
+
     </style>
 
 </head>
@@ -358,11 +424,36 @@
                         <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
+    </section>
+
+    <section id="contactme" class="contact">
+        <h2>Contact</h2>
+        <p>Use this form to get in touch. I would love to hear from you!</p>
+
+        <form class="contact-form">
+
+            <div class="contact-details">
+
+                <label for="name">Name</label>
+                <input type="text" id="yourname" placeholder="Yourname">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Reason for your message">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Your email address">
+
+            </div>
+
+            <div class="message">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="15"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
     </section>
 
 
