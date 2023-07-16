@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
         body {
@@ -249,7 +251,6 @@
             padding: 75px 0 50px 0;
             text-align: center;
             color: black;
-            background-color: rgba(244, 173, 173, 0.916);
         }
         .contact p {
             margin-bottom: 50px;
@@ -263,7 +264,6 @@
             text-align: left;
             max-width: 1100px;
             margin: 0 auto;
-            color: white;
         }
         .contact-form label {
             display: block;
@@ -309,6 +309,31 @@
             transition: 0.2s;
         }
 
+        footer {
+            height: 90px;
+            background-color: #1f2027;
+        }
+        footer .container {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .social-media {
+            font-size: 200%;
+            width: auto;
+            margin-left: auto;
+        }
+        social-media a i {
+            color: white;
+            transition: 0.2s;
+        }
+        .social-media a i:hover {
+            color: lightblue;
+            transition: 0.2;
+        }
+        .copyright {
+            color: white;
+        }
     </style>
 
 </head>
@@ -452,10 +477,17 @@
                 <textarea id="msg" rows="15"></textarea>
                 <button type="submit">Submit</button>
             </div>
-
         </form>
     </section>
 
-
+    <footer>
+        <div class="container">
+            This site &copy; 2023 Asha Abdulkadir
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/ashaabdulkadir/"><i class='fab fa-linkedin'></i></a>
+            <a href="https://github.com/AshaAbdulkadir"><i class="fa fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 </html>
