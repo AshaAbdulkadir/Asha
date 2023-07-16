@@ -7,10 +7,19 @@
     <title>Asha's Portfolio Site</title>
 
     <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
 
     <style>
         body {
             background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+            font-family: "Work Sans", sans-serif;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        h1, h2, h3 {
+            font-family: "DM Serif Display" sans-serif;
         }
 
         nav {
@@ -37,7 +46,7 @@
 
         nav ul a:hover {
             transition:  0.2s;
-            color: #823A2A;
+            color: #fd3002;
         }
         .container {
             position: relative;
@@ -64,7 +73,7 @@
         }
 
         .aboutme {
-            width: 90%;
+            width: auto;
             max-width: 1100px;
             height: auto;
             background-color: white;
@@ -84,8 +93,10 @@
         }
 
         .aboutme-image {
-            height: 450px;
+            height: 400px;
             width: 400px;
+            border: 20px;
+            border-style: groove;
             background-image: url("images/Asha2.JPG");
             background-size: cover;
             background-position: center;
@@ -94,10 +105,143 @@
         .aboutme-text {
             height: auto;
             width: 40%;
-            margin-left: 40%;
+            margin-left: 40px;
             text-align: left;
         }
 
+        #projects {
+            padding: 5px;
+            margin: 5%;
+            width: 90%;
+            height: auto;
+            text-align: center;
+        }
+
+        .projects {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+
+        #projects h2 {
+            color: whitesmoke;
+        }
+
+        .earth-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bbc-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .netflix-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .madrasa-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mosque-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .dads-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .dawes-project {
+            width: 400px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("images/Earth.jpeg");
+            margin: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .text {
+            position: absolute;
+            height: 65px;
+            width: auto;
+            left: 0;
+            bottom: 0;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            transition: 0.2s;
+            padding: 20px;
+        }
+
+        .text:hover {
+            height: 175px;
+            transition: 0.3s;
+        }
+        .text h3 {
+            margin-top: 3px;
+        }
+        .content {
+            color: black;
+        }
+        .button {
+            border: 5px solid lightblue;
+            border-radius: 10px;
+            width: 160px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+        }
 
     </style>
 
@@ -116,15 +260,15 @@
 
     <section class="hero">
         <div class="container">
+
             <img src="images/Asha.JPG" alt="Asha Abdulkadir">
             <h1>Hello! I'm Asha! An ambitious IT enthusiast.</h1>
-
 
         </div>
     </section>
 
     <section id="aboutme" class="aboutme">
-        <H2>About me</H2>
+        <h2>About me</h2>
         <div class="aboutme-section">
             <div class="img">
                 <div class="aboutme-image"></div>
@@ -132,10 +276,95 @@
             <div class="aboutme-text">
                 <p>I am an ambitious IT enthusiast. A lifelong learner who graduated from Software Development bootcamp and an AWS Certified Cloud Practitioner.
                     Currently working on my next certification while honing my earned skills.</p>
-                <p>I'm familiar with Java, HTML5, CSS3, JavaScript, PHP7 and MySQL. Checkout some of the projects I've done below.</p>
+                <p>I'm familiar with Java, HTML5, CSS3, JavaScript, PHP7, Springboot and MySQL. Checkout some of the projects I've done below.</p>
             </div>
         </div>
     </section>
+
+    <section id="projects">
+         <div class="project">
+            <h2>Projects</h2>
+            <div class="projects">
+
+
+                <div class="earth-project">
+                    <div class="text">
+                        <h3 class="project-name">Earth Facts</h3>
+                        <div class="content">
+                            <p>A HTML project about some facts about the earth.</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="bbc-project">
+                    <div class="text">
+                        <h3 class="project-name">BBC News Clone</h3>
+                        <div class="content">
+                            <p>This project is a clone of the BBC news website from the Web Dev 2.0 course.</p>
+                        </div>
+                        <a class="button" href="https://eco-cdn.co.uk/webdeveloper2.0/content/2-css/bbc.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="netflix-project">
+                    <div class="text">
+                        <h3 class="project-name">Netflix App Clone</h3>
+                        <div class="content">
+                            <p>This project is a clone of Netflix application for practice.</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="madrasa-project">
+                    <div class="text">
+                        <h3 class="project-name">Madrasa Website</h3>
+                        <div class="content">
+                            <p>This is a project of online Islamic class also known as Madrasa or Duksi</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="mosque-project">
+                    <div class="text">
+                        <h3 class="project-name">Mosque Web Site</h3>
+                        <div class="content">
+                            <p>This project is for Clarksville Mosque website. Shows current news and updates for the Muslim community that live in that area.</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="dads-project">
+                    <div class="text">
+                        <h3 class="project-name">Abdulkadir Dube Mohamed</h3>
+                        <div class="content">
+                            <p> This project is an online library for books authored by my dad, Abdulkadir Dube Mohamed. It is a language book geared toward preserving Burji language
+                                which is at risk of being extinct. I wanted to ensure his vision is preserved for generations to come.</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+                <div class="dawes-project">
+                    <div class="text">
+                        <h3 class="project-name">Skyline Molding & Construction</h3>
+                        <div class="content">
+                            <p>This project is an online shop show casing my little brothers creativity.
+                                He is based in our home town, Moyale Kenya. He gets to inspire and empower many youth through his creative ideas.</p>
+                        </div>
+                        <a class="button" href="../1-html/htmlproject.html" target="_bank">View Project</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
 
 </body>
 </html>
