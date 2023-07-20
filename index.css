@@ -84,8 +84,8 @@ h1 {
     height: 400px;
     width: 400px;
     border: 20px;
-    border-style: inset;
-    background-image: url("images/Asha3.jpg");
+
+    background-image: url("images/Asha3.JPG");
     background-size: cover;
     background-position: center;
 }
